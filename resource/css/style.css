@@ -1,0 +1,91 @@
+html {
+    margin: 0;
+    background-color: #202020;
+}
+.row {
+    width: 90%;
+    margin: 0 auto;
+}
+li {
+    list-style: none;
+}
+.light1,
+.light2,
+.light3 {
+    width: 10px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 7px;
+}
+.light1 {
+    background-color: red;
+    animation-name: lights1;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+.light2 {
+    background-color: green;
+    animation-name: lights2;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-delay: 0.7s;
+}
+.light3 {
+    background-color: blue;
+    animation-name: lights3;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-delay: 1.4s;
+}
+
+@keyframes lights1 {
+    0% {
+        filter: brightness(40%);
+        box-shadow: none;
+        
+    }
+    50% {
+        filter: brightness(500%);
+        box-shadow: 0 0 25px red;
+        filter: blur(1%);
+    }
+    100% {
+        filter: brightness(40%);
+        box-shadow: none;
+        
+    }
+}
+@keyframes lights2 {
+    0% {
+        filter: brightness(40%);
+        box-shadow: none;
+        
+    }
+    50% {
+        filter: brightness(500%);
+        box-shadow: 0 0 25px green;
+        filter: blur(1%);
+    }
+    100% {
+        filter: brightness(40%);
+        box-shadow: none;
+        
+    }
+}
+@keyframes lights3 {
+    0% {
+        filter: brightness(40%);
+        box-shadow: none;
+        
+    }
+    50% {
+        filter: brightness(500%);
+        box-shadow: 0 0 25px rgb(85, 85, 240);
+        filter: blur(1%);
+    }
+    100% {
+        filter: brightness(40%);
+        box-shadow: none;
+        
+    }
+}
